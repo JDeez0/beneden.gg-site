@@ -1,6 +1,16 @@
 # Beneden Website
 
-Modern, professional dark-themed website for Beneden company.
+Modern, spacious dark-themed website for Beneden - a revolutionary social platform.
+
+## 🎯 About Beneden
+
+Beneden is an alternative social platform that will **never monetize attention**. We're building a truly child-safe space that solves the addiction crisis through:
+
+- **Shared Goals**: Every groupchat incorporates shared goals (like lowering screen time)
+- **Visual Tokens**: Achievements that double as emojis - celebrating real progress
+- **Casual Messaging**: Context-rich communication for planning events and staying connected
+- **Child Safety**: Built from the ground up to be truly safe for children
+- **Strava for Screen Time**: Gamified, goal-oriented approach to healthy digital habits
 
 ## 🎨 Design Features
 
@@ -9,9 +19,10 @@ Modern, professional dark-themed website for Beneden company.
   - Text: `#E0E0E0` (off-white, avoids halation effect)
   - Accent: Professional blue-violet `#8B5CF6`
 
+- **Spacious Layout**: Increased 30-50% spacing for breathing room
 - **Accessibility**: WCAG 2.1 compliant contrast ratios
 - **Responsive**: Mobile-first design
-- **Modern UI**: Elevation through color, hover effects, gradients
+- **Modern UI**: Elevation through color, smooth animations, hover effects
 
 ## 📁 Project Structure
 
@@ -21,9 +32,10 @@ beneden.gg-site/
 │   └── layout.njk      # Main layout with dark theme CSS
 ├── .github/workflows/
 │   └── deploy.yml      # GitHub Actions for auto-deployment
-├── index.md            # Homepage
-├── about.md            # About page
-├── contact.md          # Contact page
+├── index.md            # Homepage (problem, solution, waitlist)
+├── about.md            # About page (mission, values, vision)
+├── contact.md          # Contact page (inquiries, partnerships)
+├── README.md           # This file
 ├── .eleventy.js        # Eleventy configuration
 ├── package.json        # Dependencies
 └── CNAME              # Custom domain configuration
@@ -44,7 +56,7 @@ npm run serve  # Live preview at http://localhost:8080
 ```bash
 git add .
 git commit -m "Your message"
-git push  # Auto-deploys to GitHub Pages
+git push  # Auto-deploys to GitHub Pages in ~30 seconds
 ```
 
 ## 🌐 Live Site
@@ -61,13 +73,25 @@ git push  # Auto-deploys to GitHub Pages
 - **Email**: Google Workspace
 - **CI/CD**: GitHub Actions
 
-## 📝 Editing Content
+## 📝 Pages
 
-All content is in Markdown files:
+### Homepage (`/`)
+- Hero with "A new world awaits" tagline
+- Problem section (3 key issues with current social media)
+- Approach section (6 key features of Beneden)
+- Philosophy section (our vision)
+- Waitlist signup form
+- Final CTA
 
-- `index.md` - Homepage
-- `about.md` - About page
-- `contact.md` - Contact page
+### About Page (`/about/`)
+- Mission statement
+- Company values (wellbeing, safety, privacy, achievement, community, sustainability)
+- Vision for the future
+
+### Contact Page (`/contact/`)
+- Contact information (general, partnerships, press, careers)
+- Waitlist signup
+- Community call-to-action
 
 ## 🎨 Customizing Design
 
@@ -77,6 +101,8 @@ Edit CSS variables in `_includes/layout.njk`:
 :root {
     --accent-primary: #8B5CF6;  /* Change accent color */
     --bg-primary: #121212;       /* Change background */
+    --text-primary: #E0E0E0;     /* Change text color */
+    --spacing-lg: 3rem;          /* Adjust spacing */
     /* ... more variables */
 }
 ```
@@ -102,4 +128,22 @@ title: Page Title
 
 ## 📧 Contact
 
-For questions or support, email: hello@beneden.gg
+- **General**: hello@beneden.gg
+- **Partnerships**: partnerships@beneden.gg
+- **Press**: press@beneden.gg
+- **Careers**: careers@beneden.gg
+
+## 🎯 Key Sections
+
+### Waitlist Form
+The waitlist form is ready for backend integration. Currently it's a placeholder form that will need to be connected to:
+- Form service (Formspree, Netlify Forms, etc.)
+- Custom backend
+- Email service
+
+### Social Links
+Footer includes placeholder links for Twitter, LinkedIn, and Email. Update these in `_includes/layout.njk`.
+
+---
+
+**A new world awaits.** Join us in building better social media.
