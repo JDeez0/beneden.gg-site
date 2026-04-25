@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "eleventy",
-    "serve": "eleventy --serve",
-    "start": "eleventy --serve"
+    "build": "npx eleventy",
+    "serve": "npx eleventy --serve",
+    "start": "npx eleventy --serve"
   },
   "keywords": [],
   "author": "",
